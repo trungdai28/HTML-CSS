@@ -1,0 +1,40 @@
+* {
+    /* Comment/uncomment để xem thay đổi trên tab TRÌNH DUYỆT */
+    margin: 0;
+}
+
+
+/* :root {
+    --text-color: red;
+    --text-color2: green;
+    --text-color3: violet;
+    --text-font-size-10: 10px;
+    --text-font-size-20: 20px;
+    --text-font-size-30: 30px;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size:var(--text-font-size-10) ;
+}
+h2 {
+    color: var(--text-color2);
+    font-size:var(--text-font-size-20) ;
+
+}
+h3 {
+    color: var(--text-color3);
+    font-size:var(--text-font-size-30) ;
+
+} */
+
+/* #first-heading {
+    color: red;
+}
+.second-heading {
+    color: blueviolet;
+    font-size: 15px;
+}
+h1 {
+    font-size: 20px;
+} */

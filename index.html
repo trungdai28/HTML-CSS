@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        1. h1 đến h3 - heading : chữ nhỏ dần
+        2. p - paragraph : đoạn văn
+        3. img - image
+        4. a - anchor : mỏ neo (neo liên kết)
+        5. ul (chấm tròn) /ol (số), li - unordered list (danh sách tùy ý sắp xếp), list item (danh sách) 
+        6. table
+        7. input
+        8. button
+    Attribute trong HTML 
+
+
+    CSS selector cơ bản
+
+    Selector/ví dụ/ mô tả
+    .Class / .intro/ Chọn taát cả các thẻ class = "intro"
+    .Class1.class2 / .name1.name2/ Chọn tất cả các thẻ  có cả name1 và name2 được đăt trong class của nó
+    .class1 .class2 / .name1 .name2 / Chọn tất cả các thể có class = "name2" là con của 1 phần tử có class="name1"
+    *  /    *   / Chọn tất cả các thẻ
+    element / h2 / chọn tất cả các thẻ h2
+    element.class / div.box / Chọn tất cả các thẻ div có class="box"
+    element, element/ div,h2 / Chọn tất cả các thẻ div và h2
+    element element/ div p / Chọn tất cả các thẻ p trong thẻ div
+    element > element/ div > p / Chọn tất cả các thẻ p là con trực tiếp của thẻ div
+    element + element/ div + p / Chọn thẻ p đứng liền kề sau thẻ thẻ div
+    element ~ element/ div ~ p / Chọn thẻ p đứng sau thẻ thẻ div
+
+    Độ ưu tiên trong CSS
+    1. Internal, External?
+    2. Inline - 1000
+    3. #id - 100
+    4. .class - 10
+    5. tag - 1
+    6. Equal specìicity?
+    7. Universal selector and inherited?
+
+    Sử dụng biến trong CSS
+    Các đơn vị trong CSS
+    Một số hàm trong CSS
+        
+    CSS functions
+        var()
+        linear-gradient()
+        rgba()
+        calc()
+        attr()
+
+     -->
+    <!--Phần đầu-->
+    <head>
+        <title> Trung Đại - Shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box {
+                width: 100%;
+                height: 120px;
+                background-color: rgb(255, 255, 0);
+
+            }
+
+            h1 {
+                font-size: 200%;
+            }
+        </style>
+
+    </head>
+    <!-- Phần thân -->
+    <body>
+        <!--Pseudo classes trong CSS-->
+        <div class="box"></div>
+        <div>
+            <h1>CSS --Pseudo-classes</h1>
+            <ul>
+                <li>:root</li>
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:first-child</li>
+                <li>:last-child</li>
+            </ul>
+        </div>
+
+        <!-- Một số hàm trong CSS
+        <div class="box"></div>
+        <div>
+            <h1>CSS functions</h1>
+            <ul>
+                <li>var()</li>
+                <li>linear-gradient()</li>
+                <li>rgba()</li>
+                <li>calc()</li>
+                <li>attr()</li>
+            </ul>
+        </div> -->
+
+        <!-- Các đơn vị trong CSS-
+        <div class="box">Trần Trung Đại - Shop</div>
+        <div> 
+            <h1>CSS units?</h1>
+            <h2>1. Absolute units? (Đơn vị tuyệt đối) </h2>
+            <ol>
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ol>
+            <h2>2. Relative units? (Đơn vị tương đối)</h2>
+            <ol>
+                <li>%</li>
+                <li>rem</li>
+                <li>em</li>
+                <li>vw</li>
+                <li>vh</li>
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+                <li>ch</li>
+            </ol>
+        </div> -->
+        <!-- <div>
+            <h1>CSS Variable</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+        </div> -->
+        <!-- <div>
+            <h1 id="first-heading">CSS selectors?</h1>
+            <h1 class="second-heading">CSS selectors?</h1>
+            <h1 class="second-heading">CSS selectors?</h1>
+            <h2 class="second-heading">ID & Class?</h2>
+        </div> -->
+        <!-- <div>
+           <h1 style="color: red;font-size: 20px;"> CSS in HTML?</h1> 
+           <ol style="color: rgb(42, 122, 66);font-size: 14px;">
+                <li>Internal: sử dụng cặp thẻ style</li>
+                <li>External: sử dụng link file ngoài vào</li>
+                <li>Inline: viết luôn vào thẻ mở sử dụng Attribute stype</li>
+           </ol>
+        </div> -->
+        <!-- <div>
+            <h1 title="Đây là tiêu đề">Vì sao trả tiền chuộc vẫn khó khôi phục hoàn toàn dữ liệu mã hóa?</h1>
+            <button>Đăng ký</button>
+            <input type="text">
+            <input type="checkbox">
+            <input type="radio">
+            <p>Sau khi lấy được khóa, chưa tới 10% doanh nghiệp khôi phục được toàn bộ dữ liệu bị hacker mã hóa và quá trình cũng kéo dài nhiều tuần.
+
+                Tại tọa đàm chiều 5/4 ở Hà Nội, Trung tá Lê Xuân Thủy, Giám đốc Trung tâm an ninh mạng quốc gia - Bộ Công an, cho rằng nạn nhân của mã hóa tống tiền (ransomware) không nên trả tiền chuộc vì sẽ tạo tiền lệ nguy hiểm, trong khi chưa chắc giải mã được toàn bộ dữ liệu.
+                
+                Tuy nhiên, ông cũng thừa nhận: "Thực tế đáng buồn là một khi dữ liệu đã bị mã hóa, gần như không có cơ hội tự giải mã. Chỉ có trả tiền chuộc, hoặc lấy được khóa mã theo cách nào đó, ví dụ tấn công được nhóm hacker".
+                
+                Tương tự, ông Vũ Ngọc Sơn, Trưởng ban nghiên cứu công nghệ - Hiệp hội An ninh mạng quốc gia, khẳng định: "Xác suất giải mã dữ liệu mà không có khóa bí mật gần như bằng 0, vì mã hóa là nền tảng của Internet".
+                
+                Phục hồi dữ liệu sau khi trả tiền chuộc
+                
+                Dù lấy được mã mở khóa, việc đưa hệ thống hoạt động trở lại cũng không đơn giản. Khi tham gia giải cứu một công ty môi giới chứng khoán cuối tháng trước, kỹ sư an ninh mạng Dương Ngọc Thái nói "không ngờ lần này khó đến vậy". Dù công ty đã có khóa bí mật, các chuyên gia vẫn gặp khó do lượng dữ liệu lớn khiến quá trình giải mã mất nhiều thời gian và hay lỗi, không thể nhanh như kỳ vọng.
+                
+                Trong báo cáo ransomware 2022 của công ty bảo mật Sophos, dựa trên khảo sát hơn 5.600 quản lý IT tại 31 quốc gia, 46% cho biết đã chấp nhận trả tiền để lấy lại dữ liệu. Tuy nhiên, chỉ 4% công ty trong số này khôi phục được toàn bộ dữ liệu, còn gần một nửa chỉ lấy lại được 61% dữ liệu.</p>
+            <img src="https://i1-sohoa.vnecdn.net/2024/04/06/img-3428-jpg-1712349628-6595-1712349797.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=h8jOaOor-LloXVvOIg54SA" alt="Ông Vũ Ngọc Sơn chia sẻ về quy trình xử lý khi bị tấn công ransomware. Ảnh: Lưu Quý">
+            
+            <a href="https://vnexpress.net/">Tới trang vnexpress.net/</a>
+            <ol>
+                <li>HTML,CSS</li>
+                <li>Cài đặt môi trường</li>
+                <li>Làm quen với Dev tool</li>
+            </ol>
+            <table>
+                <thead>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Địa chỉ</th>
+                </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Trung Đại</td>
+                        <td>Nam Định</td>
+                        <td></td>
+                    </tr>
+
+                <tbody>
+
+                </tbody>
+            </table>
+        </div> -->
+    </body>
+</html>
